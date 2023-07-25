@@ -103,7 +103,6 @@ body{
     font-size: 14px;
     font-weight: 700;
     color: var(--Dark-Grayish-Blue);
-    margin-top: 5px;
 }
 
 .btn-circle{
@@ -304,3 +303,30 @@ body.dark-mode .secondary-card:hover{
     background-color: #384066;
 }
 
+body.dark-mode .white-text{
+    color: var(--White) !important;
+}
+
+@media (max-width:375px) {
+    body{
+        margin: 20px;
+        overflow: auto;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .mode-switch{
+        margin-top: 25px;
+        justify-content: space-between;
+    }
+    .main-cards{
+        flex-direction: column;
+    }
+    .main-card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .secondary-card{
+        width: 100%;
+    }
+}
